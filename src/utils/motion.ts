@@ -16,8 +16,8 @@ export const textVariant = (delay: number) => {
   };
 };
 
-export type Direction = "left" | "right" | "up" | "down";
-export type TransitionType = "tween" | "spring"; // Add more types if needed
+export type Direction = "left" | "right" | "up" | "down" | "";
+export type TransitionType = "tween" | "spring" | ""; // Add more types if needed
 
 export const fadeIn = (
   direction: Direction | undefined,
