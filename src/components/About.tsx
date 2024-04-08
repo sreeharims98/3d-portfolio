@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { fadeIn, textVariant } from "../utils/motion";
-import { services } from "../constants";
+import { about, services } from "../constants";
 import { Tilt } from "react-tilt";
 import { SectionWrapper } from "../hoc";
 
@@ -43,15 +43,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        I am a passionate and self-motivated software developer with a keen
-        interest in web development. I have been working as a freelance web
-        developer for the past 2 years and have gained a lot of experience in
-        this field. I have a strong understanding of web technologies and
-        frameworks such as React, Node.js, and Express. I am also familiar with
-        database management systems like MongoDB and MySQL. I am always eager to
-        learn new technologies and improve my skills as a developer. I am
-        looking for an opportunity to work with a team of talented developers
-        and contribute to the success of a company.
+        {about.overview}
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">

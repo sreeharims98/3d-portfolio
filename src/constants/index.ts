@@ -15,15 +15,18 @@ import {
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
+  tbh,
+  outlogics,
+  arkellis,
   threejs,
 } from "../assets";
+
+export const about = {
+  name: "Sreehari",
+  role: "I develop web applications",
+  overview:
+    "Welcome to my website! I'm a software developer with 3+ years of experience specializing in front-end web development. I deliver successful projects and passionate about mentoring and sharing knowledge. Constantly exploring new technologies and I'm currently delving into the exciting world of WebXR, I'm dedicated to pushing boundaries and providing cutting-edge solutions.",
+};
 
 export const navLinks = [
   {
@@ -42,11 +45,11 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Frontend Web Developer",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "3D Web Developer",
     icon: mobile,
   },
   {
@@ -54,7 +57,7 @@ const services = [
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Mentor & Educator",
     icon: creator,
   },
 ];
@@ -116,55 +119,177 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "Associate Software Developer",
+    company_name: "TechByHeart",
+    icon: tbh,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "Sep 2020 - Apr 2022",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Development of an online internship platform from inception to launch.",
+      "Learned backend development from scratch and implementing robust backend functionalities.",
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
+    title: "Software Developer",
+    company_name: "Outlogics",
+    icon: outlogics,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "Apr 2022 - Jun 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Engaging directly with clients to understand their requirements, gather feedback, and ensure their satisfaction with our services.",
+      "Spearheading the maintenance efforts for the company's product, ensuring its smooth operation and reliability.",
+      "Implementing intricate new features and addressing bugs promptly to enhance the product's functionality and user experience.",
+      "Taking on the responsibility of mentoring beginners through internship programs, imparting practical skills and knowledge in web development.",
+    ],
+  },
+  {
+    title: "Software Engineer",
+    company_name: "Arkellis",
+    icon: arkellis,
+    iconBg: "#E6DEDD",
+    date: "Jun 2023 - Present",
+    points: [
+      "led the development journey of the company's flagship product, from conceptualization to a fully-fledged software experience.",
+      "Pioneering the integration of cutting-edge technologies such as 3D web development and exploring emerging trends like WebXR to deliver innovative solutions.",
+      "Implemented advanced features, including real-time data functionalities, catering to diverse use cases such as visualization and remote controlling, enhancing user engagement and interaction.",
+      "Engaged actively in product ideation meetings, providing valuable insights and contributions throughout the brainstorming process.",
+    ],
+  },
+];
+
+const projects = [
+  {
+    name: "Ausrine",
+    description:
+      "a SaaS platform revolutionizing businesses through the integration of Metaverse, Cloud, Data, and AI technologies.",
+    points: [
+      "Admin Dashboard: Developed a centralized data hub for streamlined asset and data management.",
+      "Client-Side 3D Website: Enhanced immersive experience with 3D views, AR/VR, and advanced interactions.",
+      "Notably, users can preview assets within their physical space using AR technology.",
+      "Implemented slicing and animating functionalities for 3D models, enhancing user engagement.",
+    ],
+    tags: [
+      {
+        name: "react.js",
+        color: "text-sky-500",
+      },
+      {
+        name: "babylon.js",
+        color: "text-red-500",
+      },
+      {
+        name: "three.js",
+        color: "text-gray-500",
+      },
+      {
+        name: "MSAL",
+        color: "text-green-500",
+      },
+      {
+        name: "TanStack Query",
+        color: "text-orange-500",
+      },
+      {
+        name: "DevExtreme",
+        color: "text-blue-500",
+      },
+    ],
+  },
+  {
+    name: "Digital Experience Center",
+    description:
+      "An immersive platform for asset administration, combining real-time IoT data, Data visualization, 3D-AR previews, and Media.",
+    points: [
+      "Developed an immersive platform for asset administration",
+      "Integrated real-time IoT data, data visualization, 3D-AR previews, and media.",
+      "Featured a Presenter display and multiple Viewer displays connected to the Presenter.",
+      "Empowered presenters to control and present asset-related data and media in an engaging and interactive manner.",
+    ],
+    tags: [
+      {
+        name: "react.js",
+        color: "text-sky-500",
+      },
+      {
+        name: "nats.ws",
+        color: "text-green-500",
+      },
+      {
+        name: "Google Model Viewer",
+        color: "text-gray-500",
+      },
+      {
+        name: "Keycloak.js",
+        color: "text-orange-500",
+      },
+      {
+        name: "Recharts",
+        color: "text-green-300",
+      },
+      {
+        name: "DevExtreme",
+        color: "text-blue-500",
+      },
+    ],
+  },
+  {
+    name: "Sipo Cloud POS",
+    description:
+      "a cloud-based Point of Sale (POS) system tailored for retail and hospitality businesses.",
+    points: [
+      "Online Ordering: Get a powerful ordering system with loads of options for product variations and add-ons. Integrated with POS for easy order management.",
+      "Tableside Ordering: Tableside ordering offers contactless ordering and payment system that allows guests to browse the menu, order food and drinks!",
+      "Maintained the project, ensuring stability and reliability including bug fixing.",
+      "Added new features such as combo functionality, coupon integration, add-ons management and theming options",
+    ],
+    tags: [
+      {
+        name: "react.js",
+        color: "text-sky-500",
+      },
+      {
+        name: "Redux",
+        color: "text-purple-500",
+      },
+      {
+        name: "Firebase",
+        color: "text-yellow-500",
+      },
+      {
+        name: "MUI",
+        color: "text-blue-500",
+      },
+    ],
+  },
+  {
+    name: "Interncan",
+    description:
+      "An online internship training platform, preparing students with job-oriented skills for corporate readiness. Bridging industry knowledge gaps with rigorous learning experiences.",
+    points: [
+      "Online Ordering: Get a powerful ordering system with loads of options for product variations and add-ons. Integrated with POS for easy order management.",
+      "Tableside Ordering: Tableside ordering offers contactless ordering and payment system that allows guests to browse the menu, order food and drinks!",
+      "Maintained the project, ensuring stability and reliability including bug fixing.",
+      "Added new features such as combo functionality, coupon integration, add-ons management and theming options",
+    ],
+    tags: [
+      {
+        name: "react.js",
+        color: "text-sky-500",
+      },
+      {
+        name: "Redux",
+        color: "text-purple-500",
+      },
+      {
+        name: "Firebase",
+        color: "text-yellow-500",
+      },
+      {
+        name: "MUI",
+        color: "text-blue-500",
+      },
     ],
   },
 ];
@@ -193,72 +318,6 @@ const testimonials = [
     designation: "CTO",
     company: "456 Enterprises",
     image: "https://randomuser.me/api/portraits/women/6.jpg",
-  },
-];
-
-const projects = [
-  {
-    name: "Car Rent",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
   },
 ];
 

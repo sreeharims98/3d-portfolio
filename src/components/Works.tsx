@@ -4,40 +4,37 @@ import { fadeIn, textVariant } from "../utils/motion";
 import { styles } from "../styles";
 import { projects } from "../constants";
 import { Tilt } from "react-tilt";
-import { github } from "../assets";
 
 interface ProjectCardProps {
   index: number;
   name: string;
   description: string;
+  points: string[];
   tags: {
     name: string;
     color: string;
   }[];
-  image: string;
-  source_code_link: string;
 }
 
 const ProjectCard = ({
   index,
   name,
   description,
+  points,
   tags,
-  image,
-  source_code_link,
 }: ProjectCardProps) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt
         options={{ max: 45, scale: 1, speed: 450 }}
-        className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
+        className="bg-tertiary p-5 rounded-2xl w-full h-full"
       >
-        <div className="relative w-full h-[230px]">
-          <img
+        {/* <div className="relative w-full h-[230px]">
+           <img
             src={image}
             alt={name}
             className="w-full h-full object-cover rounded-2xl"
-          />
+          /> 
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
             <div
               onClick={() => window.open(source_code_link, "_blank")}
@@ -50,10 +47,17 @@ const ProjectCard = ({
               />
             </div>
           </div>
-        </div>
-        <div className="mt-5">
+        </div> */}
+        <div>
           <h3 className="text-white font-bold text-[24px]">{name}</h3>
           <p className="mt-2 text-secondary text-[14px]">{description}</p>
+          <ul className="mt-5 list-disc ml-5 space-y-2">
+            {points.map((point, index) => (
+              <li key={index} className="text-white-100 text-[14px] pl-1">
+                {point}
+              </li>
+            ))}
+          </ul>
         </div>
         <div className="mt-4 flex flex-wrap gap-2">
           {tags.map((tag) => (
@@ -86,7 +90,7 @@ const Works = () => {
           and manage projects effectively.
         </motion.p>
       </div>
-      <div className="mt-20 flex flex-wrap gap-7">
+      <div className="mt-20 grid grid-cols-3 gap-8">
         {projects.map((project, index) => (
           <ProjectCard key={index} index={index} {...project} />
         ))}

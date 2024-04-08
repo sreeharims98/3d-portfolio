@@ -1,3 +1,4 @@
+import { about } from "../constants";
 import { styles } from "../styles";
 import ComputersCanvas from "./canvas/Computers";
 import { motion } from "framer-motion";
@@ -14,10 +15,10 @@ const Hero = () => {
         </div>
         <div>
           <h1 className={`${styles.heroHeadText}`}>
-            Hi, I'm <span className="text-[#915eff]">Sreehari</span>
+            Hi, I'm <span className="text-[#915eff]">{about.name}</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I develop front-end web applications
+            {about.role}
           </p>
         </div>
       </div>
