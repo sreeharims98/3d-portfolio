@@ -264,19 +264,46 @@ const projects = [
     ],
   },
   {
-    name: "Interncan",
+    name: "InternCan",
     description:
       "An online internship training platform, preparing students with job-oriented skills for corporate readiness. Bridging industry knowledge gaps with rigorous learning experiences.",
     points: [
-      "Online Ordering: Get a powerful ordering system with loads of options for product variations and add-ons. Integrated with POS for easy order management.",
-      "Tableside Ordering: Tableside ordering offers contactless ordering and payment system that allows guests to browse the menu, order food and drinks!",
-      "Maintained the project, ensuring stability and reliability including bug fixing.",
-      "Added new features such as combo functionality, coupon integration, add-ons management and theming options",
+      "Developed it from inception, crafting dashboards for admin, colleges, students, corporates, and soft skill companies.",
+      "Implemented advanced functionalities, including frontend validation for bulk data uploads, ensuring data integrity and streamlined management.",
+      "Enhanced student engagement with secure video access and post-video assessments, fostering comprehensive learning experiences.",
     ],
     tags: [
       {
         name: "react.js",
         color: "text-sky-500",
+      },
+      {
+        name: "Razorpay",
+        color: "text-yellow-500",
+      },
+      {
+        name: "AntD",
+        color: "text-blue-500",
+      },
+    ],
+  },
+  {
+    name: "Moto 365",
+    description:
+      "A one-stop automotive care platform for all vehicle types, offering services such as buying/selling vehicles, insurance, a marketplace, and a blog providing insights and updates on the automotive industry.",
+    points: [
+      "Spearheaded the comprehensive redesign of Automoto's website, prioritizing a modernized user experience.",
+      "Implemented a fresh design for the Moto 365 blog, ensuring a visually engaging and informative experience for readers.",
+      "Implemented and optimized the automobile buying and selling feature with intuitive interfaces and seamless functionalities.",
+    ],
+    tags: [
+      {
+        name: "react.js",
+        color: "text-sky-500",
+      },
+      {
+        name: "next.js",
+        color: "text-gray-500",
       },
       {
         name: "Redux",
@@ -287,8 +314,36 @@ const projects = [
         color: "text-yellow-500",
       },
       {
-        name: "MUI",
+        name: "AntD",
         color: "text-blue-500",
+      },
+    ],
+  },
+  {
+    name: "GizShare",
+    description:
+      "a dynamic social media platform tailored for sharing studies, research, books, and more. Users can create posts and 'giz', while others have the opportunity to purchase giz from fellow users.",
+    points: [
+      "Initiated GizShare from a challenging state, achieving project completion within a remarkable two-month timeframe and conducting a successful client demo.",
+      "Focused on frontend (HTML/CSS/JS) and ventured into Django backend.",
+      "Overcame hurdles by implementing complex features such as nested post comments, live chat with file uploads, and emoji selectors, implemented multiple language support, etc.",
+    ],
+    tags: [
+      {
+        name: "HTML",
+        color: "text-red-500",
+      },
+      {
+        name: "CSS",
+        color: "text-blue-500",
+      },
+      {
+        name: "JavaScript",
+        color: "text-yellow-500",
+      },
+      {
+        name: "Django",
+        color: "text-green-500",
       },
     ],
   },

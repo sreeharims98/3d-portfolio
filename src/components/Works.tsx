@@ -53,7 +53,7 @@ const ProjectCard = ({
           <p className="mt-2 text-secondary text-[14px]">{description}</p>
           <ul className="mt-5 list-disc ml-5 space-y-2">
             {points.map((point, index) => (
-              <li key={index} className="text-white-100 text-[14px] pl-1">
+              <li key={index} className="text-secondary text-[14px] pl-1">
                 {point}
               </li>
             ))}
@@ -90,7 +90,7 @@ const Works = () => {
           and manage projects effectively.
         </motion.p>
       </div>
-      <div className="mt-20 grid grid-cols-3 gap-8">
+      <div className="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map((project, index) => (
           <ProjectCard key={index} index={index} {...project} />
         ))}
