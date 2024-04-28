@@ -12,9 +12,9 @@ import {
   tailwind,
   nodejs,
   mongodb,
-  git,
-  figma,
-  docker,
+  // git,
+  // figma,
+  // docker,
   tbh,
   outlogics,
   arkellis,
@@ -22,7 +22,7 @@ import {
   expressjs,
   babylonjs,
   nextjs,
-  firebase,
+  // firebase,
 } from "../assets";
 
 export const about = {
