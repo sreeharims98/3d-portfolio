@@ -23,8 +23,8 @@ interface ExperienceCardProps {
 const ExperienceCard = ({ experience }: ExperienceCardProps) => {
   return (
     <VerticalTimelineElement
-      contentStyle={{ background: "#1d1836", color: "#fff" }}
-      contentArrowStyle={{ borderRight: "7px solid  #232631" }}
+      contentStyle={{ background: "#00142e", color: "#fff" }}
+      contentArrowStyle={{ borderRight: "7px solid  #00142e" }}
       date={experience.date}
       iconStyle={{ background: experience.iconBg }}
       icon={

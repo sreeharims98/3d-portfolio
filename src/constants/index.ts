@@ -19,6 +19,10 @@ import {
   outlogics,
   arkellis,
   threejs,
+  expressjs,
+  babylonjs,
+  nextjs,
+  firebase,
 } from "../assets";
 
 export const about = {
@@ -84,6 +88,10 @@ const technologies = [
     icon: reactjs,
   },
   {
+    name: "Next JS",
+    icon: nextjs,
+  },
+  {
     name: "Redux Toolkit",
     icon: redux,
   },
@@ -96,25 +104,37 @@ const technologies = [
     icon: nodejs,
   },
   {
+    name: "Express JS",
+    icon: expressjs,
+  },
+  {
     name: "MongoDB",
     icon: mongodb,
   },
+  // {
+  //   name: "Firebase",
+  //   icon: firebase,
+  // },
   {
     name: "Three JS",
     icon: threejs,
   },
   {
-    name: "git",
-    icon: git,
+    name: "Babylon JS",
+    icon: babylonjs,
   },
-  {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
-  },
+  // {
+  //   name: "git",
+  //   icon: git,
+  // },
+  // {
+  //   name: "figma",
+  //   icon: figma,
+  // },
+  // {
+  //   name: "docker",
+  //   icon: docker,
+  // },
 ];
 
 const experiences = [
@@ -122,7 +142,7 @@ const experiences = [
     title: "Associate Software Developer",
     company_name: "TechByHeart",
     icon: tbh,
-    iconBg: "#E6DEDD",
+    iconBg: "#BADFF5",
     date: "Sep 2020 - Apr 2022",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
@@ -135,7 +155,7 @@ const experiences = [
     title: "Software Developer",
     company_name: "Outlogics",
     icon: outlogics,
-    iconBg: "#E6DEDD",
+    iconBg: "#BADFF5",
     date: "Apr 2022 - Jun 2023",
     points: [
       "Engaging directly with clients to understand their requirements, gather feedback, and ensure their satisfaction with our services.",
@@ -148,7 +168,7 @@ const experiences = [
     title: "Software Engineer",
     company_name: "Arkellis",
     icon: arkellis,
-    iconBg: "#E6DEDD",
+    iconBg: "#BADFF5",
     date: "Jun 2023 - Present",
     points: [
       "led the development journey of the company's flagship product, from conceptualization to a fully-fledged software experience.",
