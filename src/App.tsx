@@ -18,11 +18,14 @@ function App() {
         </div>
         <About />
         <Experience />
-        <Tech />
+        <div className="relative z-0">
+          <Tech />
+          <StarsCanvas count={2000} />
+        </div>
         <Works />
         <div className="relative z-0">
           <Contact />
-          <StarsCanvas />
+          <StarsCanvas count={5000} />
         </div>
       </div>
     </BrowserRouter>

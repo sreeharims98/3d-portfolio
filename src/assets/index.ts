@@ -19,10 +19,10 @@ import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
-import threejs from "./tech/threejs.svg";
+import threejs from "./tech/threejs.png";
 import babylonjs from "./tech/babylonjs.png";
 import expressjs from "./tech/expressjs.png";
-import nextjs from "./tech/nextjs.svg";
+import nextjs from "./tech/nextjs.png";
 import firebase from "./tech/firebase.png";
 
 import tbh from "./company/tbh.svg";
