@@ -1,8 +1,8 @@
 import {
-  mobile,
+  threed,
   backend,
-  creator,
-  web,
+  mentor,
+  frontend,
   javascript,
   typescript,
   html,
@@ -25,11 +25,14 @@ import {
   // firebase,
 } from "../assets";
 
+export const resume =
+  "https://drive.google.com/file/d/1znDFIQafDb5ymwLERbYY5kVdL0uaRV3p/view";
+
 export const about = {
-  name: "Sreehari",
-  role: "I develop web applications",
+  name: "Sreehari 👋",
+  role: "I build modern web apps with the MERN stack",
   overview:
-    "Welcome to my website! I'm a software developer with 3+ years of experience specializing in front-end web development. I deliver successful projects and passionate about mentoring and sharing knowledge. Constantly exploring new technologies and I'm currently delving into the exciting world of WebXR, I'm dedicated to pushing boundaries and providing cutting-edge solutions.",
+    "Welcome to my website! I'm a Full-stack (MERN) developer with almost 5 years of experience, focused on building seamless and engaging front-end experiences. Passionate about mentoring and always exploring new tech, I'm currently diving into WebXR to push the boundaries of web development.",
 };
 
 export const navLinks = [
@@ -42,6 +45,10 @@ export const navLinks = [
     title: "Work",
   },
   {
+    id: "projects",
+    title: "Projects",
+  },
+  {
     id: "contact",
     title: "Contact",
   },
@@ -50,11 +57,11 @@ export const navLinks = [
 const services = [
   {
     title: "Frontend Web Developer",
-    icon: web,
+    icon: frontend,
   },
   {
     title: "3D Web Developer",
-    icon: mobile,
+    icon: threed,
   },
   {
     title: "Backend Developer",
@@ -62,7 +69,7 @@ const services = [
   },
   {
     title: "Mentor & Educator",
-    icon: creator,
+    icon: mentor,
   },
 ];
 
@@ -139,18 +146,19 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Associate Software Developer",
-    company_name: "TechByHeart",
-    icon: tbh,
+    title: "Software Engineer",
+    company_name: "Arkellis",
+    icon: arkellis,
     iconBg: "#BADFF5",
-    date: "Sep 2020 - Apr 2022",
+    date: "Jun 2023 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Development of an online internship platform from inception to launch.",
-      "Learned backend development from scratch and implementing robust backend functionalities.",
+      "led the development journey of the company's flagship product, from conceptualization to a fully-fledged software experience.",
+      "Pioneering the integration of cutting-edge technologies such as 3D web development and exploring emerging trends like WebXR to deliver innovative solutions.",
+      "Implemented advanced features, including real-time data functionalities, catering to diverse use cases such as visualization and remote controlling, enhancing user engagement and interaction.",
+      "Engaged actively in product ideation meetings, providing valuable insights and contributions throughout the brainstorming process.",
     ],
   },
+
   {
     title: "Software Developer",
     company_name: "Outlogics",
@@ -165,16 +173,16 @@ const experiences = [
     ],
   },
   {
-    title: "Software Engineer",
-    company_name: "Arkellis",
-    icon: arkellis,
+    title: "Associate Software Developer",
+    company_name: "TechByHeart",
+    icon: tbh,
     iconBg: "#BADFF5",
-    date: "Jun 2023 - Present",
+    date: "Sep 2020 - Apr 2022",
     points: [
-      "led the development journey of the company's flagship product, from conceptualization to a fully-fledged software experience.",
-      "Pioneering the integration of cutting-edge technologies such as 3D web development and exploring emerging trends like WebXR to deliver innovative solutions.",
-      "Implemented advanced features, including real-time data functionalities, catering to diverse use cases such as visualization and remote controlling, enhancing user engagement and interaction.",
-      "Engaged actively in product ideation meetings, providing valuable insights and contributions throughout the brainstorming process.",
+      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Development of an online internship platform from inception to launch.",
+      "Learned backend development from scratch and implementing robust backend functionalities.",
     ],
   },
 ];
@@ -192,15 +200,15 @@ const projects = [
     ],
     tags: [
       {
-        name: "react.js",
+        name: "React.js",
         color: "text-sky-500",
       },
       {
-        name: "babylon.js",
+        name: "Babylon.js",
         color: "text-red-500",
       },
       {
-        name: "three.js",
+        name: "Three.js",
         color: "text-gray-500",
       },
       {
@@ -229,11 +237,11 @@ const projects = [
     ],
     tags: [
       {
-        name: "react.js",
+        name: "React.js",
         color: "text-sky-500",
       },
       {
-        name: "nats.ws",
+        name: "Nats.ws",
         color: "text-green-500",
       },
       {
@@ -266,7 +274,7 @@ const projects = [
     ],
     tags: [
       {
-        name: "react.js",
+        name: "React.js",
         color: "text-sky-500",
       },
       {
@@ -294,12 +302,12 @@ const projects = [
     ],
     tags: [
       {
-        name: "react.js",
+        name: "React.js",
         color: "text-sky-500",
       },
       {
         name: "Razorpay",
-        color: "text-yellow-500",
+        color: "text-green-500",
       },
       {
         name: "AntD",
@@ -318,11 +326,11 @@ const projects = [
     ],
     tags: [
       {
-        name: "react.js",
+        name: "React.js",
         color: "text-sky-500",
       },
       {
-        name: "next.js",
+        name: "Next.js",
         color: "text-gray-500",
       },
       {
@@ -364,6 +372,99 @@ const projects = [
       {
         name: "Django",
         color: "text-green-500",
+      },
+    ],
+  },
+
+  {
+    name: "DMat Marriage",
+    description:
+      "A matrimonial platform tailored for Kerala's Dalit and Other Backward Communities, built as a full-stack application with modern web technologies.",
+    points: [
+      "Developed both frontend and backend using Next.js with Tailwind CSS and ShadCN UI for a clean, responsive UI.",
+      "Integrated MongoDB and Mongoose for user and profile data, with Cloudinary for image uploads and Razorpay for payment processing.",
+      "Implemented key features like login/signup, profile filtering, and the ability to favorite profiles.",
+    ],
+    tags: [
+      {
+        name: "Next.js",
+        color: "text-gray-500",
+      },
+      {
+        name: "MongoDB",
+        color: "text-green-500",
+      },
+      {
+        name: "TypeScript",
+        color: "text-blue-500",
+      },
+      {
+        name: "Razorpay",
+        color: "text-green-500",
+      },
+      {
+        name: "ShadCN",
+        color: "text-white-500",
+      },
+      {
+        name: "Cloudinary",
+        color: "text-indigo-500",
+      },
+    ],
+  },
+  {
+    name: "Yummitto - Food Delivery",
+    description:
+      "A food delivery platform connecting users with local restaurants, featuring both a customer-facing app and an admin dashboard.",
+    points: [
+      "Built responsive user and admin interfaces using React and Ant Design, allowing restaurant management and a smooth food ordering experience.",
+      "Integrated Google Maps API for accurate user address selection and location-based delivery support.",
+      "Developed features including restaurant and food search, add-ons, quantity selection, cart management, and a seamless checkout flow.",
+    ],
+    tags: [
+      {
+        name: "React.js",
+        color: "text-sky-500",
+      },
+      {
+        name: "AntD",
+        color: "text-blue-500",
+      },
+      {
+        name: "Google Maps API",
+        color: "text-red-500",
+      },
+    ],
+  },
+  {
+    name: "Bhavan’s Mannapra",
+    description:
+      "Built a fully responsive, fast-loading school website with 37 pages under a tight deadline. Developed both frontend and backend with a focus on performance and user experience.",
+    points: [
+      "Designed and developed 37 pages using React and TypeScript within a short timeline, styled with Tailwind CSS and DaisyUI.",
+      "Integrated Sanity CMS for dynamic content management, including galleries and carousels.",
+      "Implemented multi-level navigation and optimized page performance for faster load times.",
+    ],
+    tags: [
+      {
+        name: "React.js",
+        color: "text-sky-500",
+      },
+      {
+        name: "DaisyUI",
+        color: "text-yellow-500",
+      },
+      {
+        name: "TypeScript",
+        color: "text-blue-500",
+      },
+      {
+        name: "Tailwind CSS",
+        color: "text-blue-500",
+      },
+      {
+        name: "Sanity CMS",
+        color: "text-red-500",
       },
     ],
   },

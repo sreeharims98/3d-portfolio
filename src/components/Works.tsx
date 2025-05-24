@@ -56,7 +56,7 @@ const Works = () => {
   return (
     <>
       <motion.div variants={textVariant(0)}>
-        <p className={styles.sectionSubText}>My work</p>
+        <p className={styles.sectionSubText}>My works</p>
         <p className={styles.sectionHeadText}>Projects.</p>
       </motion.div>
       <div className="w-full flex">
@@ -80,5 +80,5 @@ const Works = () => {
   );
 };
 
-const WrappedWorks = SectionWrapper(Works, "");
+const WrappedWorks = SectionWrapper(Works, "projects");
 export default WrappedWorks;

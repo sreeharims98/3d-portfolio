@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { useState } from "react";
 import { close, logo, menu } from "../assets";
-import { navLinks } from "../constants";
+import { navLinks, resume } from "../constants";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -26,47 +26,56 @@ const Navbar = () => {
             Sreehari M S
           </p>
         </Link>
-        <ul className="list-none hidden sm:flex flex-row gap-10">
-          {navLinks.map((link) => (
-            <li
-              key={link.id}
-              className={`${
-                active === link.title ? "text-white" : "text-secondary"
-              } hover:text-white text-[18px] font-medium cursor-pointer `}
-              onClick={() => setActive(link.title)}
-            >
-              <a href={`#${link.id}`}>{link.title}</a>
-            </li>
-          ))}
-        </ul>
-        <div className="sm:hidden flex flex-1 justify-end items-center">
-          <img
-            src={toggle ? close : menu}
-            alt="menu"
-            className="w-[28px] h-[28px] object-contain cursor-pointer"
-            onClick={() => setToggle(!toggle)}
-          />
-          <div
-            className={`${
-              !toggle ? "hidden" : "flex"
-            } p-6 menu-gradient absolute top-20 right-0 mx-4 my-4 min-w-[140px] z-10 rounded-xl`}
+        <div className="flex items-center gap-10">
+          <a
+            href={resume}
+            target="_blank"
+            className="text-accent font-poppins text-[18px] font-bold  cursor-pointer"
           >
-            <ul className="list-none flex justify-end items-start flex-col gap-4">
-              {navLinks.map((link) => (
-                <li
-                  key={link.id}
-                  className={`${
-                    active === link.title ? "text-white" : "text-secondary"
-                  } font-poppins font-medium cursor-pointer text-[16px]`}
-                  onClick={() => {
-                    setToggle(!toggle);
-                    setActive(link.title);
-                  }}
-                >
-                  <a href={`#${link.id}`}>{link.title}</a>
-                </li>
-              ))}
-            </ul>
+            Resume
+          </a>
+          <ul className="list-none hidden md:flex flex-row gap-10">
+            {navLinks.map((link) => (
+              <li
+                key={link.id}
+                className={`${
+                  active === link.title ? "text-white" : "text-secondary"
+                } hover:text-white text-[18px] font-medium cursor-pointer `}
+                onClick={() => setActive(link.title)}
+              >
+                <a href={`#${link.id}`}>{link.title}</a>
+              </li>
+            ))}
+          </ul>
+          <div className="md:hidden flex flex-1 justify-end items-center">
+            <img
+              src={toggle ? close : menu}
+              alt="menu"
+              className="w-[28px] h-[28px] object-contain cursor-pointer"
+              onClick={() => setToggle(!toggle)}
+            />
+            <div
+              className={`${
+                !toggle ? "hidden" : "flex"
+              } p-6 menu-gradient absolute top-20 right-0 mx-4 my-4 min-w-[140px] z-10 rounded-xl`}
+            >
+              <ul className="list-none flex justify-end items-start flex-col gap-4">
+                {navLinks.map((link) => (
+                  <li
+                    key={link.id}
+                    className={`${
+                      active === link.title ? "text-white" : "text-secondary"
+                    } font-poppins font-medium cursor-pointer text-[16px]`}
+                    onClick={() => {
+                      setToggle(!toggle);
+                      setActive(link.title);
+                    }}
+                  >
+                    <a href={`#${link.id}`}>{link.title}</a>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
       </div>

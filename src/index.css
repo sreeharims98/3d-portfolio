@@ -49,6 +49,22 @@
   background: -webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
 }
 
+.blue-purple-gradient {
+  background: "#5ddcff";
+  background: linear-gradient(
+    90.13deg,
+    #5ddcff 1.9%,
+    #3c67e3 50%,
+    #4e00c2 97.5%
+  );
+  background: -webkit-linear-gradient(
+    -90.13deg,
+    #5ddcff 1.9%,
+    #3c67e3 50%,
+    #4e00c2 97.5%
+  );
+}
+
 /* canvas- styles */
 .canvas-loader {
   font-size: 10px;
