@@ -4,6 +4,7 @@ import { fadeIn, textVariant } from "../utils/motion";
 import { styles } from "../styles";
 import { projects } from "../constants";
 import { Tilt } from "react-tilt";
+import useIsMobile from "../hooks/useIsMobile";
 
 interface ProjectCardProps {
   index: number;
@@ -14,6 +15,7 @@ interface ProjectCardProps {
     name: string;
     color: string;
   }[];
+  isMobile: boolean;
 }
 
 const ProjectCard = ({
@@ -22,9 +24,20 @@ const ProjectCard = ({
   description,
   points,
   tags,
+  isMobile,
 }: ProjectCardProps) => {
+  // Conditionally apply Framer Motion props for desktop only
+  const motionProps = isMobile
+    ? {}
+    : {
+        variants: fadeIn("up", "spring", index * 0.2, 0.75),
+        initial: "hidden",
+        whileInView: "show",
+        viewport: { once: true, amount: 0.1 },
+      };
+
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <motion.div {...motionProps}>
       <Tilt
         options={{ max: 45, scale: 1, speed: 450 }}
         className="bg-tertiary p-5 rounded-2xl w-full h-full"
@@ -53,15 +66,27 @@ const ProjectCard = ({
 };
 
 const Works = () => {
+  const isMobile = useIsMobile();
+
+  // Conditionally apply Framer Motion props for desktop only
+  const motionProps = isMobile
+    ? {}
+    : {
+        variants: textVariant(0),
+        initial: "hidden",
+        whileInView: "show",
+        viewport: { once: true, amount: 0.25 },
+      };
+
   return (
     <>
-      <motion.div variants={textVariant(0)}>
+      <motion.div {...motionProps}>
         <p className={styles.sectionSubText}>My works</p>
         <p className={styles.sectionHeadText}>Projects.</p>
       </motion.div>
       <div className="w-full flex">
         <motion.p
-          variants={fadeIn("", "", 0.1, 1)}
+          {...motionProps}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
           Following projects showcases my skills and experience through
@@ -73,7 +98,12 @@ const Works = () => {
       </div>
       <div className="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map((project, index) => (
-          <ProjectCard key={index} index={index} {...project} />
+          <ProjectCard
+            key={index}
+            index={index}
+            {...project}
+            isMobile={isMobile}
+          />
         ))}
       </div>
     </>

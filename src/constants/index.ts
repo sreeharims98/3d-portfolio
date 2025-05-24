@@ -29,7 +29,7 @@ export const resume =
   "https://drive.google.com/file/d/1znDFIQafDb5ymwLERbYY5kVdL0uaRV3p/view";
 
 export const about = {
-  name: "Sreehari 👋",
+  name: "Sreehari",
   role: "I build modern web apps with the MERN stack",
   overview:
     "Welcome to my website! I'm a Full-stack (MERN) developer with almost 5 years of experience, focused on building seamless and engaging front-end experiences. Passionate about mentoring and always exploring new tech, I'm currently diving into WebXR to push the boundaries of web development.",
@@ -375,7 +375,6 @@ const projects = [
       },
     ],
   },
-
   {
     name: "DMat Marriage",
     description:
@@ -470,31 +469,4 @@ const projects = [
   },
 ];
 
-const testimonials = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-  },
-];
-
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, projects };

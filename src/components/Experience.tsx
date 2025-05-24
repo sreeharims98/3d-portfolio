@@ -8,6 +8,7 @@ import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
 import { styles } from "../styles";
 import { experiences } from "../constants";
+import useIsMobile from "../hooks/useIsMobile";
 
 interface ExperienceCardProps {
   experience: {
@@ -61,6 +62,7 @@ const ExperienceCard = ({ experience }: ExperienceCardProps) => {
 };
 
 const Experience = () => {
+  const isMobile = useIsMobile();
   return (
     <>
       <motion.div variants={textVariant(0)}>
@@ -69,7 +71,7 @@ const Experience = () => {
       </motion.div>
 
       <div className="mt-20 flex flex-col">
-        <VerticalTimeline>
+        <VerticalTimeline animate={isMobile ? false : true}>
           {experiences.map((experience, index) => (
             <ExperienceCard key={index} experience={experience} />
           ))}

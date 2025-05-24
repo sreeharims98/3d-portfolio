@@ -14,7 +14,7 @@ interface ServiceCardProps {
 const ServiceCard = ({ index, title, icon }: ServiceCardProps) => {
   return (
     <Tilt
-      className="xs:w-[250px] w-full"
+      className="sm:w-[250px] w-full"
       options={{ max: 45, scale: 1, speed: 450 }}
     >
       <motion.div
