@@ -9,6 +9,7 @@ import { textVariant } from "../utils/motion";
 import { styles } from "../styles";
 import { experiences } from "../constants";
 import useIsMobile from "../hooks/useIsMobile";
+import RobotCanvas from "./canvas/Robot";
 
 interface ExperienceCardProps {
   experience: {
@@ -77,6 +78,7 @@ const Experience = () => {
           ))}
         </VerticalTimeline>
       </div>
+      {!isMobile && <RobotCanvas />}
     </>
   );
 };

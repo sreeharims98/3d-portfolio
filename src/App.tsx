@@ -17,13 +17,12 @@ function App() {
           <Hero />
         </div>
         <About />
-        <Experience />
-        <div className="relative z-0">
-          <Tech />
-          <StarsCanvas count={2000} />
+        <div className="relative">
+          <Experience />
         </div>
         <Works />
         <div className="relative z-0">
+          <Tech />
           <Contact />
           <StarsCanvas count={5000} />
         </div>
