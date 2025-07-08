@@ -25,9 +25,6 @@ import {
   // firebase,
 } from "../assets";
 
-export const resume =
-  "https://drive.google.com/file/d/1znDFIQafDb5ymwLERbYY5kVdL0uaRV3p/view";
-
 export const about = {
   name: "Sreehari",
   role: "I build modern web apps with the MERN stack",

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { useState } from "react";
 import { close, logo, menu } from "../assets";
-import { navLinks, resume } from "../constants";
+import { navLinks } from "../constants";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -28,7 +28,7 @@ const Navbar = () => {
         </Link>
         <div className="flex items-center gap-10">
           <a
-            href={resume}
+            href={"sreehari_ms_resume.pdf"}
             target="_blank"
             className="text-accent font-poppins text-[18px] font-bold  cursor-pointer"
           >

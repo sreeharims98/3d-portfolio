@@ -3,6 +3,7 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 
 import CanvasLoader from "../Loader";
+import useIsMobile from "../../hooks/useIsMobile";
 
 const Earth = () => {
   const earth = useGLTF("./planet.glb");
@@ -13,6 +14,7 @@ const Earth = () => {
 };
 
 const EarthCanvas = () => {
+  const isMobile = useIsMobile();
   return (
     <Canvas
       shadows
@@ -27,12 +29,14 @@ const EarthCanvas = () => {
       }}
     >
       <Suspense fallback={<CanvasLoader />}>
-        <OrbitControls
-          autoRotate
-          enableZoom={false}
-          maxPolarAngle={Math.PI / 2}
-          minPolarAngle={Math.PI / 2}
-        />
+        {!isMobile && (
+          <OrbitControls
+            autoRotate
+            enableZoom={false}
+            maxPolarAngle={Math.PI / 2}
+            minPolarAngle={Math.PI / 2}
+          />
+        )}
         <Earth />
 
         <Preload all />
