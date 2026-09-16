@@ -6,6 +6,7 @@ import Experience from "./components/Experience";
 import Tech from "./components/Tech";
 import Works from "./components/Works";
 import Contact from "./components/Contact";
+import Chat from "./components/Chat";
 import { StarsCanvas } from "./components/canvas";
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
           <Contact />
           <StarsCanvas count={5000} />
         </div>
+        <Chat />
       </div>
     </BrowserRouter>
   );
